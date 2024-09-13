@@ -1,0 +1,4 @@
+a = [input() for i in range(3)]
+print(", ".join(sorted(a, reverse=True)) + ".")
+
+Это сложное решение, другое я хз

@@ -1,4 +1,6 @@
 a = input()
 b = input()
 c = input()
-print('В сегодняшнем матче команда "', a, '" победила команду "', b, '" со счётом', c)
+print(a)
+print(b)
+print(c)

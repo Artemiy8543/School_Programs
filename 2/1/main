@@ -1,1 +1,5 @@
-print(input())
+a = input()
+if a == "OK":
+    print("Это правильный ответ!")
+else:
+    print("Пока неверно.")

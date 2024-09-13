@@ -1,7 +1,7 @@
 a = input()
 b = input()
 c = input()
-if c == "нет":
-    print("Сегодня", a + ",", b, "градусов,", "осадков нет.")
+if c == ">":
+    print(max(a, b))
 else:
-    print("Сегодня", a + ",", b, "градусов,", "осадки.")
+    print(min(a, b))
