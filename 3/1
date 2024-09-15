@@ -1,0 +1,14 @@
+def human_read_format(a):
+    b = 0
+    while a >= 1024:
+        a = a / 1024
+        b = b + 1
+    a = round(a)
+    if b == 0:
+        return str(a) + "Б"
+    elif b == 1:
+        return str(a) + "КБ"
+    elif b == 2:
+        return str(a) + "МБ"
+    else:
+        return str(a) + "ГБ"
