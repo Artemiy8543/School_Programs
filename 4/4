@@ -1,0 +1,5 @@
+a = input()
+if "ворон" in a:
+    print("Кар!")
+elif "вор" in a or "Вор" in a:
+    print("Полиция!")

@@ -1,0 +1,13 @@
+a = input()
+if "лилипут" in a or "Лилипут" in a or "ЛИЛИПУТ" in a:
+    if "великан" in a or "Великан" in a or "ВЕЛИКАН" in a:
+        print("Я совсем запутался.")
+    else:
+        print("В Лилипутии.")
+elif "великан" in a or "Великан" in a or "ВЕЛИКАН" in a:
+    if "лилипут" in a or "Лилипут" in a or "ЛИЛИПУТ" in a:
+        print("Я совсем запутался.")
+    else:
+        print("В Великании.")
+else:
+    print("Я совсем запутался.")

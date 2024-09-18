@@ -1,0 +1,11 @@
+a = input()
+if a == "5" or a == "6" or a == "7" or a == "8" or a == "9" or a == "10":
+    print("Утро")
+elif a == "11" or a == "12" or a == "13" or a == "14" or a == "15" or a == "16" or a == "17":
+    print("День")
+elif a == "18" or a == "19" or a == "20" or a == "21" or a == "22":
+    print("Вечер")
+elif a == "23" or a == "0" or a == "1" or a == "2" or a == "3" or a == "4":
+    print("Ночь")
+else:
+    print("Ошибка")

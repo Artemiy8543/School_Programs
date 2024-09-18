@@ -1,0 +1,7 @@
+a = input()
+b = input()
+c = input()
+if a == "На старт!" and b == "Внимание!" and c == "Марш!":
+    print("Бежим!")
+else:
+    print("Фальстарт")

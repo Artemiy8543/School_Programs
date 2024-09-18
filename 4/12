@@ -1,0 +1,21 @@
+a = input()
+b = input()
+c = input()
+d = input()
+r = ""
+if a in d:
+    r += a
+if b in d:
+    if len(r) == 0:
+        r += b
+    else:
+        r += ", " + b
+if c in d:
+    if len(r) == 0:
+        r += c
+    else:
+        r += ", " + c
+if len(r) == 0:
+    print("Таких цветов в букете нет.")
+else:
+    print("В букете есть", r + ".")

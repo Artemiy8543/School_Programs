@@ -1,0 +1,5 @@
+a = input()
+if " " not in a and ("*" in a or "?" in a):
+    print("Возможно маска")
+else:
+    print("Нет, это не маска!")

@@ -1,0 +1,5 @@
+a = input()
+if "дожд" in a or "Дожд" in a or "осадки" in a or "Осадки" in a != -1:
+    print("Возьми зонт!")
+else:
+    print("Зонт не нужен.")

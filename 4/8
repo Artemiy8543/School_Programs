@@ -1,0 +1,7 @@
+a = input()
+b = input()
+c = input()
+if a.find("три") != -1 and b.find("два") != -1 and (c.find("один") != -1 or c.find("раз") != -1):
+    print("ПУСК")
+else:
+    print("ОШИБКА")
