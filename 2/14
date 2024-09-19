@@ -1,4 +1,19 @@
-a = [input() for i in range(3)]
-print(", ".join(sorted(a, reverse=True)) + ".")
-
-Это сложное решение, другое я хз
+#Илья легенда
+a = input()
+b = input()
+c = input()
+if a > b and a > c:
+    if c < b:
+        print(a + ",", b + ",", c + ".")
+    else:
+        print(a + ",", c + ",", b + ".")
+if b > c and b > a:
+    if a > c:
+        print(b + ",", a + ",", c + ".")
+    else:
+        print(b + ",", c + ",", a + ".")
+if c > a and c > b:
+    if b > a:
+        print(c + ",", b + ",", a + ".")
+    else:
+        print(c + ",", a + ",", b + ".")
