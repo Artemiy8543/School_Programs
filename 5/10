@@ -1,0 +1,10 @@
+a = input()
+b = input()
+c = int(input())
+if (a == "A" and b != "B") or (a == "B" and b != "A") or (b == "A" and a != "B") or (b == "B" and a != "A"):
+    if a == "A" or b == "A":
+        print((c - 5) // 2)
+    else:
+        print((c - 3) // 2)
+else:
+    print("NOT TO GO")

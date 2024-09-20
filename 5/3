@@ -1,0 +1,4 @@
+a = int(input())
+b = int(input())
+a = a - (a % b) + b * min(a % b, 1)
+print(round(a // b))

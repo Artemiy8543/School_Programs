@@ -1,0 +1,7 @@
+a = int(input())
+b = int(input())
+if b == 0:
+    print("Не делится!")
+else:
+    print("Каждому по", a // b)
+    print("Осталось", a % b)

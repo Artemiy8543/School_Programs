@@ -1,0 +1,14 @@
+d = int(input())
+a = a // 100
+b = a // 10 % 10
+c = a % 10
+if a != 0 and b != 0 and c != 0 and a != b and a != c and b != c:
+    print(a * b * c)
+else:
+    if a == b or a == c or b == c:
+        if a == b and a == c:
+            print(3)
+        else:
+            print(2)
+    else:
+        print(max(a, b, c) - min(a, b, c))
