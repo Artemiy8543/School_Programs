@@ -1,0 +1,10 @@
+a = input()
+b = int(input())
+c = int(input())
+d = int(input())
+e = 0
+for f in range(1000, 10000, 2):
+    if a not in str(f) and (f // 1000 == b or f // 1000 == c or f // 1000 == d) and (f // 1000 + f // 100 % 10) % 2 != 0:
+        if (f // 1000 + f // 100 % 10) == (f // 10 % 10 + f % 10):
+            e += 1
+print(e)

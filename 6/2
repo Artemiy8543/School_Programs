@@ -1,0 +1,13 @@
+def from_bit_to_pic(a):
+    b = []
+    c = 0
+    d = "" 
+    for i in a:
+        e = bin(int(i, 16))[2:]
+        e = "0" * (4 - len(e)) + e
+        d += bi
+        if c == 1:
+            b.append(d)
+            d = "" 
+        c = abs(c - 1)
+    return b
