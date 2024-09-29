@@ -1,0 +1,4 @@
+a = input()
+b = input()
+c = int(a * 2 + b * 3)
+print(c ** 2)

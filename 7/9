@@ -1,0 +1,5 @@
+a = input()
+if "." not in a:
+    print(len(a))
+else:
+    print(int(a[:a.find(".")]))

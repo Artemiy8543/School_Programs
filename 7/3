@@ -1,0 +1,7 @@
+a = float(input())
+if abs(a) > 10 ** 9:
+    print("INFINITELY SMALL")
+elif abs(a) < 10 ** (-9):
+    print("INFINITELY LARGE")
+else:
+    print(1 / a)

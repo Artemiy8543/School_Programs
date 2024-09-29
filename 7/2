@@ -1,0 +1,7 @@
+a = int(input())
+b = int(input())
+c = input()
+if len(c) % b == 0:
+    print(a * (len(c) // b))
+else:
+    print(a * (len(c) // b + 1))

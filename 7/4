@@ -1,0 +1,30 @@
+a = input()
+b = input()
+c = input()
+if a < b and a < c:
+    if b < c:
+        print(a)
+        print(c)
+        print(len(b))
+    else:
+        print(a)
+        print(b)
+        print(len(c))
+elif b < a and b < c:
+    if a < c:
+        print(b)
+        print(c)
+        print(len(a))
+    else:
+        print(b)
+        print(a)
+        print(len(c))
+elif c < a and c < b:
+    if a < b:
+        print(c)
+        print(b)
+        print(len(a))
+    else:
+        print(c)
+        print(a)
+        print(len(b))

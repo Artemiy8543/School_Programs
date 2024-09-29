@@ -1,0 +1,9 @@
+a = int(input())
+b = int(input())
+c = int(input())
+d = a * b + c
+print(int(str(c) + str(b)))
+if int(str(c) + str(b)) > d:
+    print("ДА")
+else:
+    print("НЕТ")
