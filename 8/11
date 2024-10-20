@@ -1,0 +1,24 @@
+a = input()
+b = 0
+c = 0
+d = 0
+while a != "СТОП":
+    if a == "шаг":
+        if d == 0:
+            c += 1
+        elif d == 1:
+            b += 1
+        elif d == 2:
+            c -= 1
+        else:
+            b -= 1
+    elif a == "направо":
+        d += 1
+    elif a == "налево":
+        d -= 1
+    if d < 0:
+        d = 3
+    elif d > 3:
+        d = 0
+    a = input()
+print(b, c)

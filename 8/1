@@ -1,0 +1,6 @@
+a = input()
+b = ""
+while a != "":
+    b += str(len(a)) + "\n"
+    a = input()
+print(b)

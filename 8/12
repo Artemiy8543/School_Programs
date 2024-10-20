@@ -1,0 +1,9 @@
+a = input()
+b = 0
+c = 0
+while " " not in a:
+    b = int(input())
+    if len(a) == b:
+        c += 1
+    a = input()
+print(c)

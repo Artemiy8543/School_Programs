@@ -1,0 +1,12 @@
+a = input()
+b = 0
+c = 0
+while a != "":
+    if a == "да":
+        b += 1
+    c += 1
+    a = input()
+if b / c >= 0.8:
+    print("Достигли")
+else:
+    print("Пока нет")

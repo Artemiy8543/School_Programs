@@ -1,0 +1,13 @@
+a = input()
+b = input()
+c = "Второй"
+while b != "":
+    if len(a) > len(b):
+        break
+    a = b
+    b = input()
+    if c == "Второй":
+        c = "Первый"
+    else:
+        c = "Второй"
+print(c)

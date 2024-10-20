@@ -1,0 +1,11 @@
+c = int(input())
+b = int(input())
+a = int(input())
+d = 0
+while a != -1:
+    if a < b > c:
+        d += 1
+    c = b
+    b = a
+    a = int(input())
+print(d)

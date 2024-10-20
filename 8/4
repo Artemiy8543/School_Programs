@@ -1,0 +1,11 @@
+a = int(input())
+b = -1000
+c = -1000
+while abs(a) < 1000:
+    if a > b:
+        c = b
+        b = a
+    elif a > c:
+        c = a
+    a = int(input())
+print(c)

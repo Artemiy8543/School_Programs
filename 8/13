@@ -1,0 +1,10 @@
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+e = a * d - c * b
+f = b * d
+i = e
+while e % i != 0 or f % i != 0:
+    i -= 1
+print(str(e // i) + "/" + str(f // i))
