@@ -1,0 +1,13 @@
+a = input()
+b = 0
+c = False
+d = "аяоёэеуюыи" 
+for i in a:
+    if i != " ":
+        if i in d and c is True:
+            b += 1
+        elif i in d and c is False:
+            c = True
+    else:
+        c = False        
+print(b)

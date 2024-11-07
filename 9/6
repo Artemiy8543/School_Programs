@@ -1,0 +1,15 @@
+a = input()
+b = int(input())
+c = ""
+r = 0
+m = 0
+for i in range(b):
+    d = input()
+    if c == d and c == a:
+        r += 1
+    else:
+        r = 0
+    if r > m:
+        m = r
+    c = d
+print(m + 1)
