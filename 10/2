@@ -1,0 +1,11 @@
+a = int(input())
+b = 1
+c = 1
+r = 2
+while b < a:
+    b, c = c + b, b
+    r += 1
+if b == a:
+    print(r)
+else:
+    print("НЕТ")

@@ -1,0 +1,13 @@
+a = input()
+b = ""
+while a != "":
+    if 1000 > len(a) > 99:
+        print(b)
+    elif len(a) % 2 == 0:
+        print(a + a)
+    elif len(a) % 3 == 0:
+        print(a + a + a)
+    else:
+        print(a)
+    b = a
+    a = input()

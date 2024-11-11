@@ -1,0 +1,10 @@
+a = int(input())
+b = int(input())
+c = int(input())
+d = 0
+e = 0
+while d < a:
+    d += b
+    b += c
+    e += 1
+print(e)

@@ -1,0 +1,11 @@
+a = int(input())
+b = int(input())
+c = int(input())
+r = 0
+while c != 0:
+    if c == 1:
+        r += a
+    else:
+        r -= b
+    c = int(input())
+print(r)

@@ -1,0 +1,12 @@
+a = int(input())
+b = 2 * a
+c = a / 3
+d = a / 8
+e = b
+f = d
+g = 0
+while e + c + f > (2 * a + a / 3 + a / 8) / 2:
+    e = b * (1 - 0.01) ** g
+    f = d * (1 - 0.005) ** g
+    g += 1
+print(g - 1, e + c + f)

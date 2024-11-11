@@ -1,0 +1,9 @@
+a = int(input())
+if a == 0:
+    print(50)
+elif a > 70:
+    print(a)
+elif a <= 30:
+    print(a + (a * 5 // 10))
+else:
+    print(a + (a // 10))

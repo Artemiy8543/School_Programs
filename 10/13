@@ -1,0 +1,11 @@
+a = int(input())
+b = float(input())
+c = float(input())
+for i in range(int(c // 1)):
+    a += (a / 100) * b 
+if c == c // 1:
+    print(a)
+else:
+    x = c - (c // 1)
+    a += a * x * 0.01
+    print(a)

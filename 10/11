@@ -1,0 +1,6 @@
+a = int(input())
+b = int(input())
+if a - (a * 0.02 * b) < a / 2:
+    print(a / 2)
+else:
+    print(a - (a * 0.02 * b))

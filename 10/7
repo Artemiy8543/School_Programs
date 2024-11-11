@@ -1,0 +1,22 @@
+a = int(input())
+b = int(input())
+c = input()
+e = 0
+f = 0
+g = 0
+while c != "END":
+    c = int(c)
+    d = int(input())
+    if d - (c * a + b) > 0:
+        e += 1
+    elif d - (c * a + b) == 0:
+        g += 1
+    else:
+        f += 1
+    c = input()
+if e > 0:
+    print("Выше прямой:", e)
+if f > 0:
+    print("Ниже прямой:", f)
+if g > 0:
+    print("На прямой:", g)
