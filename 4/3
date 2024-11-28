@@ -1,7 +1,7 @@
 a = input()
 b = input()
 c = input()
-if a == "3" or a == "три" and b == "2" or b == "два" and c == "1" or c == "один" or c == "раз":
+if (a == "3" or a == "три") and (b == "2" or b == "два") and (c == "1" or c == "один" or c == "раз"):
     print("ПУСК")
 else:
     print("ОШИБКА")
