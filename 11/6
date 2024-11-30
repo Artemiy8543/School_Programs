@@ -1,0 +1,14 @@
+a = input()
+b = 1
+c = 0
+while a != "ВСЁ":
+    if "звезд" in a or "Звезд" in a:
+        c = b
+    if c != 0 and ("пад" in a or "пал" in a):
+        c = 0
+    b += 1
+    a = input()
+if c != 0:
+    print(c)
+else:
+    print("НЕТ")

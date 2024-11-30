@@ -1,0 +1,24 @@
+a = input()
+aa = ""
+b = 0
+c = 0
+while a != "":
+    if a == "добрый":
+        b += 1
+    elif a == "злой":
+        c += 1
+    else:
+        if b > c and aa == "добрый":
+            print("серебряный шиллинг")
+        elif b > c and aa != "добрый":
+            print("Ах, не знаю!")
+            break
+        elif b < c and aa == "злой":
+            print("золотой")
+        else:
+            print("Ах, не знаю!")
+            break
+        b = 0
+        c = 0
+    aa = a
+    a = input()

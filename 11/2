@@ -1,0 +1,11 @@
+a = input()
+b = False
+while a != "ВСЁ":
+    if "звезд" in a or "Звезд" in a:
+        b = True
+        break
+    a = input()
+if b:
+    print("Загадывай!")
+else:
+    print("НЕТ")

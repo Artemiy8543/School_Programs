@@ -1,0 +1,9 @@
+a = int(input())
+b = 1
+for i in range(a):
+    if b % 7 == 0:
+        print("Крюк!")
+        b = 1
+        continue
+    print("Пройдена", b, "миля.")
+    b += 1

@@ -1,0 +1,28 @@
+b = int(input())
+a = int(input())
+c = 1
+d = False
+if a < b:
+    d = True
+while a >= 0:
+    if a < 35 or b < 35:
+        print("ALARM")
+        break
+    if a > b:
+        if d is False:
+            c += 1
+        else:
+            print(c)
+            c = 2
+            d = False
+    elif a < b:
+        if d is True:
+            c += 1
+        else:
+            print(c)
+            c = 2
+            d = True
+    b = a
+    a = int(input())
+if a < 0:
+    print(c)

@@ -1,0 +1,13 @@
+a = int(input())
+b = input()
+c = 0
+while b != "КОНЕЦ":
+    if "доска" in b or "дощечка" in b:
+        c += 1
+        print("Прибили", c, "дощечку.")
+        if c >= a:
+            print("ГОТОВО")
+            break
+    b = input()
+if c < a:
+    print("МАЛОВАТО")

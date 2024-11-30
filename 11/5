@@ -1,0 +1,22 @@
+a = int(input())
+b = int(input())
+c = False
+d = 1
+e = 0
+while b != 0:
+    if b > 20:
+        c = True
+    e += b
+    if e < a:
+        d += 1
+    else:
+        break
+    b = int(input())
+if e >= a:
+    print("Время заполнения", d, "секунд.")
+else:
+    print("Ведро не полное.")
+if c is True:
+    print("Град был!")
+else:
+    print("Града не было.")

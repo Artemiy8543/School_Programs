@@ -1,0 +1,13 @@
+a = int(input())
+while a != 0:
+    if a % 3 == 0:
+        if a % 7 == 0:
+            print("Караул!")
+            break
+        else:
+            print("несчастливое")            
+    elif a % 7 == 0:
+        print("опасное")
+    else:
+        print(a)
+    a = int(input())
