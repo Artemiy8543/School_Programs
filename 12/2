@@ -1,0 +1,7 @@
+a = int(input())
+b = int(input())
+c = int(input())
+for i in range(a, b + 1, c):
+    for k in range(a, b + 1, c):
+        print(i, "+", k, "=", i + k, end="\t")
+    print()

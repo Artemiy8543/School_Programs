@@ -1,0 +1,12 @@
+a = int(input())
+b = 0
+for i in range(1, a + 1):
+    c = 0
+    if i % 2 == 0:
+        for k in range(2, i + 1, 2):
+            c += k
+    else:
+        for k in range(1, i + 1, 2):
+            c += k
+    b += i ** c
+print(b)

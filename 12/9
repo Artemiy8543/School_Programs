@@ -1,0 +1,9 @@
+a = input()
+b = int(input())
+for i in range(b):
+    for k in range(b):
+        if k == i or k == b - i - 1:
+            print(a, end=" ")
+        else:
+            print(" ", end=" ")
+    print()
