@@ -1,11 +1,13 @@
 a = int(input())
-b = []
-for i in range(a):
-    for k in range(a):
-        for j in range(a):
-            b.append(2 ** i * 3 ** k * 5 ** j)
-b.sort()
-print(b[a])
-#Межов хотел такое решение, но оно не пройдет
-#Я думал как сделать и нормальных способов нет
-#:)
+c = [1]
+while len(c) < a * 5:
+    b = [i for i in c]
+    for i in b:
+        if i * 2 not in c:
+            c.append(i * 2)
+        if i * 3 not in c:
+            c.append(i * 3)
+        if i * 5 not in c:
+            c.append(i * 5)
+c.sort()
+print(c[a])
