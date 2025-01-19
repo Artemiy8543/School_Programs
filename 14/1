@@ -1,0 +1,6 @@
+while True:
+    a = input()
+    if a == "":
+        break
+    if [a.count(i) for i in a].count(1) == len(a):
+        print(a)

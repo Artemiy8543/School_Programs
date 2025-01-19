@@ -1,0 +1,24 @@
+a = set()
+b = set()
+c = set()
+f = set()
+d = int(input())
+for i in range(d):
+    e = int(input())
+    f.add(e)
+    if e > 40:
+        a.add(e)
+    if e % 2 == 0:
+        b.add(e)
+    if e % 3 == 0:
+        c.add(e)
+for i in f:
+    r = 0
+    if i in a:
+        r += 1
+    if i in b:
+        r += 1
+    if i in c:
+        r += 1
+    if r == 2:
+        print(i, end=" ")

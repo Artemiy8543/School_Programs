@@ -1,0 +1,19 @@
+a = set()
+b = set()
+c = set()
+while True:
+    d = input()
+    if d == "":
+        break
+    a.add(d)
+while True:
+    d = input()
+    if d == "":
+        break
+    b.add(d)
+while True:
+    d = input()
+    if d == "":
+        break
+    c.add(d)
+print("\n".join(a - (b | c)), "\n".join(b - (a | c)), "\n".join(c - (a | b)), sep="\n")

@@ -1,0 +1,10 @@
+a = int(input())
+c = ""
+for i in range(1, a + 1):
+    b = input()
+    if i <= len(b):
+        c += b[-i]
+    else:
+        c = "None"
+        break
+print(c)

@@ -1,0 +1,10 @@
+a = input()
+b = ""
+for i in a:
+    if i < b:
+        print(i)
+        a = "-1"
+        break
+    b = i
+if a != "-1":
+    print("(:_0_:)"

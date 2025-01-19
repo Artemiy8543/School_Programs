@@ -1,0 +1,8 @@
+a = set()
+for i in range(int(input())):
+    b = input()
+    if b in a:
+        print("ДА")
+    else:
+        print("НЕТ")
+    a.add(b)

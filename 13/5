@@ -1,0 +1,9 @@
+a = int(input())
+b = set()
+for i in range(a):
+    b.add(input())
+c = int(input())
+d = set()
+for i in range(c):
+    d.add(input())
+print("\n".join(b & d))

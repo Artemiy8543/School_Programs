@@ -1,0 +1,8 @@
+a = input()
+b = set()
+c = set()
+for i in a:
+    b.add(i)
+for k in range(10):
+    c.add(str(k))
+print(" ".join(c - b))

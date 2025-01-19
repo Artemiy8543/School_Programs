@@ -1,0 +1,4 @@
+a = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+b = int(input())
+for i in range(-1, 3):
+    print(a[(b + i) % 26], end="")

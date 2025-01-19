@@ -1,0 +1,11 @@
+a = []
+c = set()
+for i in range(int(input())):
+    a.append(set())
+    for k in input():
+        a[i].add(k)
+        c.add(k)
+b = a[0]
+for i in a:
+    b = i & b
+print(len(b), len(c))

@@ -1,0 +1,5 @@
+a = input()
+if "Z" >= a >= "A":
+    print(chr(ord(a) + 32))
+else:
+    print(chr(ord(a) - 32))

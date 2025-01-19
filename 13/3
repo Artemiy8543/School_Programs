@@ -1,0 +1,11 @@
+a = set()
+b = []
+for i in range(3):
+    for k in set(input()):
+        if k in a:
+            b.append(k)
+        else:
+            a.add(k)
+b = list(set(b))
+for i in b:
+    print(i, end="")

@@ -1,0 +1,7 @@
+a = set()
+b = int(input())
+for i in range(b):
+    c = input()
+    for k in c:
+        a.add(k)
+print(len(a))

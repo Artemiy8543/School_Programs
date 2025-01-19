@@ -1,0 +1,12 @@
+a = set()
+for i in range(3):
+    while True:
+        b = input()
+        if b == "":
+            break
+        a.add(b)
+for i in range(int(input())):
+    b = input()
+    if b in a:
+        print(b)
+        a.remove(b)

@@ -1,0 +1,13 @@
+a = input()
+mi = 10000
+ma = 0
+for i in a:
+    if ord(i) > ma:
+        ma = ord(i)
+    if ord(i) < mi:
+        mi = ord(i)
+print(mi, ", ", ma, sep="")
+if len(set(a)) <= 32:
+    print("ХВАТИТ")
+else:
+    print("НЕ ХВАТИТ")

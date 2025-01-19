@@ -1,0 +1,11 @@
+a = input()
+res = 0
+for i in range(len(a) - 4):
+    a0 = int(a[i])
+    a1 = int(a[i + 1])
+    a2 = int(a[i + 2])
+    a3 = int(a[i + 3])
+    a4 = int(a[i + 4])
+    if a0 * a1 * a2 * a3 * a4 > res:
+        res = a0 * a1 * a2 * a3 * a4
+print(res)
