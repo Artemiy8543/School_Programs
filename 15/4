@@ -1,0 +1,14 @@
+a = input()
+b = int(input())
+c = True
+while len(a) > b:
+    if c:
+        print(a[-b::])
+        a = a[:-b]
+        c = False
+    else:
+        print(a[:b:])
+        a = a[b::]
+        c = True
+if len(a) > 0:
+    print(a)

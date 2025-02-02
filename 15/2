@@ -1,0 +1,6 @@
+a = input()
+b = int(input())
+c = int(input())
+d = int(input())
+d = -d
+print(a[b:c:d])

@@ -1,0 +1,6 @@
+a = input()
+a = a[1::2]
+b = set()
+for i in a:
+    b.add(i)
+print(len(b))

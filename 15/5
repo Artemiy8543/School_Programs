@@ -1,0 +1,16 @@
+a = input() + " "
+b = 0
+c = 0
+d = ""
+e = ""
+for i in a:
+    if i != " ":
+        b += 1
+        d += i
+    else:
+        if b > c:
+            c = b
+            e = d
+        d = ""
+        b = 0
+print(e)

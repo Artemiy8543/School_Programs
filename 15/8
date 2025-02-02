@@ -1,0 +1,8 @@
+a = input()
+b = 0
+for i in a:
+    if i != "-":
+        b += 1
+    else:
+        break
+print(a[b + 1:] + "-" + a[:b])

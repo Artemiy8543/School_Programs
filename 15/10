@@ -1,0 +1,9 @@
+a = input()
+b = ""
+for i in a:
+    if i != " ":
+        b += i
+if b == b[::-1]:
+    print("True")
+else:
+    print("False")
