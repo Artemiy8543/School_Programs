@@ -1,0 +1,13 @@
+a = []
+while True:
+    b = input()
+    if b == "":
+        break
+    a.append(b)
+c = int(input())
+d = int(input())
+e = ""
+for i in range(c - 1, d):
+    if len(e) < len(a[i]):
+        e = a[i]
+print(e)

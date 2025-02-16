@@ -1,0 +1,14 @@
+a = []
+b = 0
+while True:
+    c = input()
+    if c == "":
+        break
+    a.append(c)
+    if len(c) > b:
+        b = len(c)
+a = a[::-1]
+for i in a:
+    d = "-" * ((b - len(i)) // 2) + i
+    d += "-" * (b - len(d))
+    print(d)

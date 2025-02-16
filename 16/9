@@ -1,0 +1,13 @@
+a = int(input())
+b = []
+for i in range(a):
+    b.append(input())
+c = int(input())
+d = []
+for i in range(c):
+    e = input()
+    if e in d:
+        print(e + ", всем по одному подарку!")
+    else:
+        d.append(e)
+        print("Вот твой подарок,", e + "!")

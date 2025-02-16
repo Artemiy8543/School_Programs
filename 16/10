@@ -1,0 +1,17 @@
+a = []
+while True:
+    b = input()
+    if b == "":
+        break
+    a.append(b)
+a = a[::-1]
+c = False
+for i in a:
+    if "Все хорошо" in i:
+        if c:
+            break
+        else:
+            c = True
+    else:
+        if c:
+            print(i)

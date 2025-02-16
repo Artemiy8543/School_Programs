@@ -1,0 +1,13 @@
+a = int(input())
+b = []
+for i in range(a):
+    b.append(input())
+c = int(input())
+for i in range(c):
+    d = input()
+    e = -1
+    for k in range(len(b)):
+        if d in b[k]:
+            e = k + 1
+            break
+    print(e)
