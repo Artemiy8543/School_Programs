@@ -1,0 +1,23 @@
+a = []
+b = []
+while True:
+    c = input()
+    if c == "":
+        break
+    a.append(c)
+    b.append(c)
+for i in range(len(a) - 1):
+    for j in range(len(a) - 1 - i):
+        if a[j] > a[j + 1]:
+            a[j], a[j + 1] = a[j + 1], a[j]
+for i in range(len(b) - 1):
+    for j in range(len(b) - 1 - i):
+        if len(b[j]) > len(b[j + 1]):
+            b[j], b[j + 1] = b[j + 1], b[j]
+if a == b:
+    print("YES")
+else:
+    for i in range(len(a)):
+        if a[i] != b[i]:
+            print(a[i], b[i])
+            break

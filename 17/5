@@ -1,0 +1,13 @@
+a = int(input())
+b = []
+for i in range(a):
+    c = input()
+    d = False
+    for k in b:
+        if k[1] == c:
+            k[0] += 1
+            d = True
+    if not d:
+        b.append([1, c])
+for i in b:
+    print(tuple(i))

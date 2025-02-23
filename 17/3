@@ -1,0 +1,12 @@
+a = []
+while True:
+    b = input()
+    if b == "разбитое корыто":
+        break
+    a.append(b)
+for i in range(len(a) - 1):
+    for j in range(len(a) - 1 - i):
+        if len(a[j]) > len(a[j + 1]):
+            a[j], a[j + 1] = a[j + 1], a[j]
+for i in a:
+    print(i)

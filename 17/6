@@ -1,0 +1,15 @@
+a = int(input())
+e = -1
+f = ""
+r = []
+for i in range(a):
+    b = input()
+    c = b[:b.rfind(" ")]
+    d = int(b[b.rfind(" ") + 1:])
+    if e != -1:
+        if e < d:
+            r.append((i, f))
+    e = d
+    f = c
+for i in r:
+    print(i)

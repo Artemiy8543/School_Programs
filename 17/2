@@ -1,0 +1,16 @@
+a = int(input())
+b = []
+for i in range(a):
+    c = int(input())
+    d = float(input())
+    e = (c, d)
+    b.append(e)
+for i in range(len(b) - 1):
+    for j in range(len(b) - 1 - i):
+        if b[j][0] < b[j + 1][0]:
+            b[j], b[j + 1] = b[j + 1], b[j]
+        elif b[j][0] == b[j + 1][0]:
+            if b[j][1] < b[j + 1][1]:
+                b[j], b[j + 1] = b[j + 1], b[j]
+for i in b:
+    print(i)

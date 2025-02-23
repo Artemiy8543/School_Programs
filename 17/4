@@ -1,0 +1,7 @@
+a = int(input())
+b = int(input())
+c = int(input())
+for i in range(c):
+    d = int(input())
+    e = ("№" + str(i + 1), b * a ** 2 / d ** 2)
+    print(e)
