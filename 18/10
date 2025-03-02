@@ -1,0 +1,3 @@
+a = input().split()
+b = [i[::-1] for i in a]
+print(*b)

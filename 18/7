@@ -1,0 +1,8 @@
+a, b, c = map(str, input().split())
+b = int(b)
+d = c.split(a)
+e = []
+for i in d:
+    if len(set(i)) >= b:
+        e.append(i)
+print(a[::-1].join(e))
