@@ -1,0 +1,6 @@
+a = input().split()
+b, c = map(int, input().split())
+if b > c:
+    b, c = c, b
+d = [int(i) for i in a[b:c]]
+print(sum(d))

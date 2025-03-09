@@ -1,0 +1,8 @@
+a = input()
+b = int(input())
+if b > 100:
+    a = a.replace("0000", "|||")
+else:
+    a = a.replace("|||", "00", 3)
+a = a.replace("|0|", "|00|", 1)
+print(a)

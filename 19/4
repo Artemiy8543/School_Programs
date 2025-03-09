@@ -1,0 +1,4 @@
+a = input()
+b = input().upper().split()
+b = [a.join(list(i)) for i in b]
+print(*b)

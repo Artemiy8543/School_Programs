@@ -1,0 +1,13 @@
+a = []
+while True:
+    b = input()
+    if b == "":
+        break
+    a.append(b)
+b = []
+c = input()
+for i in a:
+    if i.startswith("@" + c):
+        b.append(i[i.find(" ") + 1:].capitalize())
+b.sort()
+print("\n".join(b))
