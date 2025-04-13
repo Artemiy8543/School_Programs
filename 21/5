@@ -1,0 +1,10 @@
+a = [int(i) for i in input().split()]
+b = []
+for i in a:
+    c = bin(i)[2:]
+    d = dict()
+    d["digits"] = len(c)
+    d["units"] = c.count("1")
+    d["zeros"] = c.count("0")
+    b.append(d)
+print(b)

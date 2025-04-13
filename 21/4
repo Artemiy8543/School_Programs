@@ -1,0 +1,16 @@
+a = int(input())
+c = dict()
+for i in range(a):
+    b = input().split("\t")
+    for k in b:
+        if k in c:
+            c[k] = c[k] + 1
+        else:
+            c[k] = 1
+ma = 0
+for i in c:
+    if c[i] > ma:
+        ma = c[i]
+for i in c:
+    if c[i] == ma:
+        print(i)

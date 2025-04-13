@@ -1,0 +1,18 @@
+a = dict()
+while True:
+    b = input()
+    if b == "":
+        break
+    b = b.split()
+    n = b[0]
+    d = int(b[1])
+    if b[0] in a:
+        if a[n][0] > d:
+            a[n][0] = d
+        if a[n][1] < d:
+            a[n][1] = d
+    else:
+        a[n] = [d, d]
+for i in a:
+    a[i] = (a[i][0], a[i][1])
+print(a)

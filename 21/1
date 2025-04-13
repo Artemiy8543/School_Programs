@@ -1,0 +1,16 @@
+b = {"1": "Archaea", "2": "Proterozoic"}
+while True:
+    a = input()
+    if a == "":
+        break
+    a = int(a)
+    if a >= 2800000:
+        print(b["1"])
+    elif 2800000 > a >= 635000:
+        print(b["2"])
+    elif 635000 > a >= 300000:
+        print("Paleozoic")
+    elif 300000 > a >= 145000:
+        print("Mesozoic")
+    else:
+        print("Cenozoic")

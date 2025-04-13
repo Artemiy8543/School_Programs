@@ -1,0 +1,7 @@
+a = int(input())
+b = int(input())
+c = [[input() for i in range(b)] for k in range(a)]
+print("\n".join(["; ".join(i) for i in c]))
+print()
+d = [[c[i][k] for i in range(a)] for k in range(b)]
+print("\n".join(["; ".join(i) for i in d]))

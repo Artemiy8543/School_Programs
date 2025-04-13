@@ -1,0 +1,8 @@
+a = [int(i) for i in input().split()]
+b = [a]
+while len(b[-1]) > 1:
+    c = [b[-1][i] + b[-1][i + 1] for i in range(0, len(b[-1]) - 1, 2)]
+    if len(b[-1]) % 2 != 0:
+        c.append(b[-1][-1])
+    b.append(c)
+print("\n".join([" ".join([str(k) for k in i]) for i in b[::-1]]))

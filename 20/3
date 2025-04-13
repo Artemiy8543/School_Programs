@@ -1,0 +1,10 @@
+a = int(input())
+b = [[int(i) for i in input().split(", ")] for k in range(a)]
+c = 0
+for y in range(a):
+    c += b[y][y]
+    c += b[y][a - y - 1]
+    b[y][y], b[y][a - y - 1] = b[y][a - y - 1], b[y][y]
+for i in range(a):
+    print(*b[i])
+print(c)

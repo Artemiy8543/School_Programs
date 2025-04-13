@@ -1,0 +1,15 @@
+a = []
+while True:
+    b = input()
+    if b == "":
+        break
+    a.append([int(i) for i in b.split()])
+b = [[0 for i in range(len(a))] for k in range(len(a[0]))]
+for y in range(len(a)):
+    for x in range(len(a[y])):
+        b[x][y] = a[y][x]
+b = [sorted(b[i]) if i % 2 == 0 else sorted(b[i])[::-1] for i in range(len(b))]
+for y in range(len(b)):
+    for x in range(len(b[y])):
+        a[x][y] = b[y][x]
+print("\n".join(["\t".join([str(k) for k in i]) for i in a]))

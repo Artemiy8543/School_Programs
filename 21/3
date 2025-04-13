@@ -1,0 +1,17 @@
+a = dict()
+while True:
+    b = input()
+    if b == "":
+        break
+    b = b.split()
+    a[b[0]] = b[1:]
+while True:
+    b = input()
+    if b == "":
+        break
+    for c in a:
+        if b in a[c]:
+            a[c].remove(b)
+for c in a:
+    if len(a[c]) == 0:
+        print(c)

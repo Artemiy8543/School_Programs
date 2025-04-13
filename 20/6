@@ -1,0 +1,29 @@
+m = [["0" for i in range(10)] for k in range(10)]
+alp = {"а": 0, "б": 1, "в": 2, "г": 3, "д": 4, "е": 5, "ж": 6, "з": 7, "и": 8, "к": 9}
+a = input().split()
+if a[1] == "в":
+    for i in range(int(a[0][1:]) - 1, int(a[0][1:]) + 3):
+        m[i][alp[a[0][0]]] = "□"
+else:
+    for i in range(alp[a[0][0]], alp[a[0][0]] + 4):
+        m[int(a[0][1:]) - 1][i] = "□"
+for _ in range(2):
+    a = input().split()
+    if a[1] == "в":
+        for i in range(int(a[0][1:]) - 1, int(a[0][1:]) + 2):
+            m[i][alp[a[0][0]]] = "□"
+    else:
+        for i in range(alp[a[0][0]], alp[a[0][0]] + 3):
+            m[int(a[0][1:]) - 1][i] = "□"
+for _ in range(3):
+    a = input().split()
+    if a[1] == "в":
+        for i in range(int(a[0][1:]) - 1, int(a[0][1:]) + 1):
+            m[i][alp[a[0][0]]] = "□"
+    else:
+        for i in range(alp[a[0][0]], alp[a[0][0]] + 2):
+            m[int(a[0][1:]) - 1][i] = "□"   
+for _ in range(4):
+    a = input().split()
+    m[int(a[0][1:]) - 1][alp[a[0][0]]] = "□"
+print("\n".join([" ".join(i) for i in m]))
